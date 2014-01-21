@@ -13,7 +13,7 @@ It seemed to me to be the perfect place to start introducing objects in our ment
 
 Let's say that we have 3 items in our shopping list: Bread, Apples and Whiskey. It would be very simple to implement this as a Javascript Array like so:
 
-###Example 1  - A Shopping List as an Array of Strings
+###Example 1 - A Shopping List as an Array of Strings
 
 	var myShoppingList = [];
 	myShoppingList.push("Bread");
