@@ -18,7 +18,7 @@ It seemed to me to be the perfect place to start introducing objects in our ment
 
 Let's say that we have 3 items in our shopping list: Bread, Apples and Whiskey. It would be very simple to implement this as a Javascript Array like so:
 
-###Example 1 - A Shopping List as an Array of Strings
+#####1 - A Shopping List as an Array of Strings
 	
 	// Create the array using the array literal syntax
 	var myShoppingList = [];
@@ -35,7 +35,7 @@ Let's say that we have 3 items in our shopping list: Bread, Apples and Whiskey. 
 
 Done! Its simple but you could argue that it is too 'simplistic', As an illustration, let's say you wanted to remove an item from the list. Well you could just delete it from the array. The problem is how do you get it back again? Another example of the simplicity of this implementation is that say you wanted to merely cross out items as you added them to your physical shopping basket - ideally you would want to retain the item in the list but have it notionally deleted - it would be pretty tricky to implement this behaviour with an Array of Strings. Of course it could be done - and in numerous ways, however I believe that these 'solutions' would not be as intuitive and robust as a solution that employed an Array of Objects rather than Strings.
 
-###Example 2 - Introducing the Object way
+##### 2 - Introducing the Object way
 	
 	// Create the array using the array literal syntax
 	var myShoppingList = [];
@@ -52,6 +52,8 @@ Done! Its simple but you could argue that it is too 'simplistic', As an illustra
 	
 The example above adds 3 objects to the `myShoppingList` Array. Note that the objects themselves are *object literals* created with the `{}` or curly brace syntax. Let's take one of the objects and break it down, before explaining why we gave it the attributes we did. So - I want a bottle of Whiskey for Christmas, so I added it to my shopping list:
 
+##### 3 - Creating an Object 'Literal'
+
 	{ 
 		itemName: "Whiskey", 
 		itemPrice: 100.95, 
@@ -60,9 +62,11 @@ The example above adds 3 objects to the `myShoppingList` Array. Note that the ob
 	
 Let us (sort of) digress for a moment. It's pretty clear that I have given my bottle of whiskey 3 properties: a name, a price and an `isDeleted` property. The name and the price are pretty obvious but the `isDeleted` property means that I can still have the bottle of whiskey in the list but have it notionally crossed off the list. You could access the whiskey from the Array as follows:
 
-var myWhiskeyBottle = myShoppingList[0];
+	var myWhiskeyBottle = myShoppingList[0];
 
 You could further access any of the properties of the Whiskey thus:
+
+##### 4 - Getting the properties out of an Object
 
 	var nameOfWhiskey = myWhiskeyBottle.name;
 	var priceOfWhiskey = myWhiskeyBottle.price;
