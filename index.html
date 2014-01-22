@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Petes Stuff</title>
+  <meta name="author" content="Pete Januarius">
 
   
-  <meta name="description" content="During a mentor session with one of my students, we started talking about how she might approach the Shopping List project. The obvious and simplest &hellip;">
+  <meta name="description" content="Level: Beginner with a couple of small projects under their belt! Introduction This brief article is designed to be an illustration of how you could &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://peetjthinkful.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Petes Stuff" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -36,9 +36,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Petes Stuff</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>My thoughts mostly on Frontend Web Development.</h2>
   
 </hgroup>
 
@@ -94,9 +94,15 @@
   </header>
 
 
-  <div class="entry-content"><p><strong>During a mentor session with one of my students, we started talking about how she might approach the Shopping List project. The obvious and simplest approach was (from an implementation point of view) to hold a bunch of String objects inside an array. However, on reflection we felt that this could perhaps be too simplistic. For example, let&rsquo;s say that one of the project requirements was to be able to cross out items on the list instead of deleting the item. It would be pretty hard to represent this if all we had was an Array of String objects.</strong></p>
+  <div class="entry-content"><h4>Level: Beginner with a couple of small projects under their belt!</h4>
 
-<p>Enter the Object. As we discussed the problem, we realised that if we could perhaps have a slightly more complex representation of the item in the list (after all each item is a real thing, has certain properties and is certainly more than a just a string of letters!), then perhaps we could give the item a certain state which would mean that it is deleted but not removed from the list &ndash; ie. crossed out.</p>
+<h3>Introduction</h3>
+
+<p><em>This brief article is designed to be an illustration of how you could utilise objects in your code. It is not meant to be definitive, neither does it claim to be the optimum way of defining/creating objects. It does however aim to be an &lsquo;easy-ish&rsquo; way of getting into objects and how you might use them in a real world scenario.</em></p>
+
+<p><strong>During a mentor session with one of my students, we started talking about how she might approach the Shopping List project. The obvious and simplest approach was (from an implementation point of view) to hold a bunch of String objects inside an array. However, on reflection we felt that this could perhaps be too simplistic. For example, let&rsquo;s say that one of the projects&#8217; requirements was to be able to cross out items on the list instead of deleting the item. It would be pretty hard to implement this if all we had was an Array of String objects.</strong></p>
+
+<p><em>Enter the Object</em>. As we discussed the problem, we realised that if we could perhaps have a slightly more complex representation of the item in the list, (after all, each item is a real thing, has certain properties and is certainly more than a just a string of letters!) then perhaps we could give the item a certain state which would mean that it is deleted but not removed from the list &ndash; ie. crossed out.</p>
 
 <p>It seemed to me to be the perfect place to start introducing objects in our mentor sessions. Let&rsquo;s take a look at how we might model a shopping list in Javascript.</p>
 
@@ -104,22 +110,36 @@
 
 <h3>Example 1 &ndash; A Shopping List as an Array of Strings</h3>
 
-<pre><code>var myShoppingList = [];
+<pre><code>// Create the array using the array literal syntax
+var myShoppingList = [];
+
+// Add items to the array
 myShoppingList.push("Bread");
 myShoppingList.push("Apples");
 myShoppingList.push("Whiskey");
+
+// Print them to the console
+console.log(myShoppingList[0]);
+console.log(myShoppingList[1]);
+console.log(myShoppingList[2]);
 </code></pre>
 
-<p>Done! Its simple but one might say it is too &lsquo;simplistic&rsquo;, ie. you might find for example that you want to model some behaviour but this implementation won&rsquo;t support it. For example if I wanted to be able to delete items from the list I would be ok &ndash; just get rid of the String object from the Array.</p>
-
-<p>However, if I wanted to merely cross out items, so I could retain the item in the list but have it notionally deleted &ndash; I might want to cross off items as I put them in my cart &ndash; then it would be pretty tricky to implement this behaviour with an Array of Strings. Of course it could be done and in numerous ways, however I believe that these &lsquo;solutions&rsquo; would not be as intuitive and robust and a solution that employed an Array of Objects rather than Strings.</p>
+<p>Done! Its simple but you could argue that it is too &lsquo;simplistic&rsquo;, As an illustration, let&rsquo;s say you wanted to remove an item from the list. Well you could just delete it from the array. The problem is how do you get it back again? Another example of the simplicity of this implementation is that say you wanted to merely cross out items as you added them to your physical shopping basket &ndash; ideally you would want to retain the item in the list but have it notionally deleted &ndash; it would be pretty tricky to implement this behaviour with an Array of Strings. Of course it could be done &ndash; and in numerous ways, however I believe that these &lsquo;solutions&rsquo; would not be as intuitive and robust as a solution that employed an Array of Objects rather than Strings.</p>
 
 <h3>Example 2 &ndash; Introducing the Object way</h3>
 
-<pre><code>var myShoppingList = [];
-myShoppingList.push({ itemName: "Bread", itemPrice: 3.60, isDeleted: false});
-myShoppingList.push({ itemName: "Apples", itemPrice: 1.60, isDeleted: false});
-myShoppingList.push({ itemName: "Whiskey", itemPrice: 100.95, isDeleted: false});
+<pre><code>// Create the array using the array literal syntax
+var myShoppingList = [];
+
+// Create the object literals
+var bread = { itemName: "Bread", itemPrice: 3.60, isDeleted: false };
+var apples = { itemName: "Apples", itemPrice: 1.60, isDeleted: false };
+var whiskey = { itemName: "Whiskey", itemPrice: 100.95, isDeleted: false };
+
+// Add the Objects to the shopping list array
+myShoppingList.push(bread);
+myShoppingList.push(apples);
+myShoppingList.push(whiskey);
 </code></pre>
 
 <p>The example above adds 3 objects to the <code>myShoppingList</code> Array. Note that the objects themselves are <em>object literals</em> created with the <code>{}</code> or curly brace syntax. Let&rsquo;s take one of the objects and break it down, before explaining why we gave it the attributes we did. So &ndash; I want a bottle of Whiskey for Christmas, so I added it to my shopping list:</p>
@@ -135,7 +155,7 @@ myShoppingList.push({ itemName: "Whiskey", itemPrice: 100.95, isDeleted: false})
 
 <p>var myWhiskeyBottle = myShoppingList[0];</p>
 
-<p>You could further access any of the properties thus:</p>
+<p>You could further access any of the properties of the Whiskey thus:</p>
 
 <pre><code>var nameOfWhiskey = myWhiskeyBottle.name;
 var priceOfWhiskey = myWhiskeyBottle.price;
@@ -150,14 +170,17 @@ console.log(stateOfWhiskey);
 
 <p>I&rsquo;m in the Bottle shop and I put my favourite bottle in my trolley. I cross it off my list. Effectively it has been deleted from the list but my requirements dictate that I should still see it on the list with a line through it. So I simply set the <code>isDeleted</code> property to <code>true</code>.</p>
 
-<p>My Array looks like this:</p>
-
-<pre><code>myShoppingList[0].isDeleted = false;
-myShoppingList[1].isDeleted = false;
-myShoppingList[2].isDeleted = true;
+<pre><code>myWhiskeyBottle.isDeleted = true;
 </code></pre>
 
-<p>My Shopping list looks like this:</p>
+<p>Now let&rsquo;s inspect which items have been deleted in the Array:</p>
+
+<pre><code>console.log("Bread: " + myShoppingList[0].isDeleted);
+console.log("Apples: " + myShoppingList[1].isDeleted);
+console.log("Whiskey: " + myShoppingList[2].isDeleted);
+</code></pre>
+
+<p>Clearly the whiskey has been deleted from the list so now my Shopping list should look like this:</p>
 
 <ul>
 <li>Bread,</li>
@@ -172,9 +195,25 @@ myShoppingList[2].isDeleted = true;
 
 <p>If you have any comments or questions regarding the above please don&rsquo;t hesitate to contact me.</p>
 
+<p>One final thing &ndash; I believe the more you read about a topic (utilising different perspectives and analogies) the more likely you are to understand it well. Therefore I encourage you to find other articles that talk about object creation and read them. I have listed a few below that I believe you may find helpful. Note that this comes with a warning &ndash; some of them are pretty complex so you will have to be prepared for a lot of study if you are anything like me!</p>
+
+<hr />
+
+<p><a href="http://bit.ly/19ll7yX" title="Understanding Javascript Object Creation Patterns">Understanding Javascript Object Creation Patterns</a></p>
+
+<p><a href="http://bit.ly/1eS3t9o" title="Javascript Object Oriented Programming - Part 1">Javascript Object Oriented Programming &ndash; Part 1</a></p>
+
+<p><a href="http://bit.ly/1eS3M3U" title="Beginners Guide to JavaScript Objects, Methods and Attributes">Beginners Guide to JavaScript Objects, Methods and Attributes</a></p>
+
+<p><a href="http://bit.ly/1eS422Q" title="The Basics of Object-Oriented JavaScript | Nettuts+">The Basics of Object-Oriented JavaScript | Nettuts+</a></p>
+
+<hr />
+
 <p><strong>Email: pjanuarius@thinkful.com</strong></p>
 
 <p><strong>Twitter: @peetj</strong></p>
+
+<hr />
 </div>
   
   
@@ -251,7 +290,7 @@ myShoppingList[2].isDeleted = true;
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Your Name -
+  Copyright &copy; 2014 - Pete Januarius -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
