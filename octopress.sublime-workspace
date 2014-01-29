@@ -1,0 +1,473 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"en",
+				"enemy2"
+			],
+			[
+				"create",
+				"createEnemy"
+			],
+			[
+				"a",
+				"audio"
+			],
+			[
+				"add",
+				"addBody"
+			],
+			[
+				"con",
+				"contentWidth"
+			],
+			[
+				"setup",
+				"setupScene"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"find",
+				"findChordById"
+			],
+			[
+				"un",
+				"unselectCurrentChord"
+			],
+			[
+				"get",
+				"getCurrentlySelectedChord"
+			],
+			[
+				"selet",
+				"selectNextChord"
+			],
+			[
+				"p",
+				"prototype"
+			],
+			[
+				"stop",
+				"stopPropagation"
+			],
+			[
+				"_mo",
+				"_moveChordRight"
+			],
+			[
+				"chord",
+				"chordToTest"
+			],
+			[
+				"is",
+				"isSelected"
+			],
+			[
+				"chor",
+				"chordToTest"
+			],
+			[
+				"re",
+				"rearrangeOverlappedChords"
+			],
+			[
+				"next",
+				"nextChord"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"right",
+				"rightConstraint"
+			],
+			[
+				"son",
+				"songCatSong"
+			],
+			[
+				"de",
+				"deselectCurrentChord"
+			],
+			[
+				"curr",
+				"currentlySelectedChord"
+			],
+			[
+				"dup",
+				"duplicate"
+			],
+			[
+				"sel",
+				"selectedChord"
+			],
+			[
+				"ch",
+				"chords"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"al",
+				"alteredFifth"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"m",
+				"m_currentlySelectedObjects"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"inlin",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/peetj/GitHub/Nestable/index2.html",
+		"/Users/peetj/GitHub/Nestable/jquery.nestable.js",
+		"/Users/peetj/GitHub/front-end-web-dev-code-examples/positioning/example4/README.md",
+		"/Users/peetj/GitHub/front-end-web-dev-code-examples/positioning/example4/index.html",
+		"/Users/peetj/Desktop/songcat-timeline.txt",
+		"/Users/peetj/Projects/steroids/myProject/config/application.coffee",
+		"/Library/Development/cricketscorer/Cricket Scorer/Cricket Scorer/games.json",
+		"/Users/peetj/Projects/steroids/myProject/config/application.coffee.test",
+		"/Users/peetj/Downloads/Assesment_2/application.macosx/source/Assesment_2.java",
+		"/Users/peetj/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/peetj/Projects/corona/spaceinvaders/background.png",
+		"/Users/peetj/Projects/corona/bball/main.lua",
+		"/Library/WebServer/Documents/easeljs/easel.sublime-project",
+		"/Library/WebServer/Documents/kineticjs/kinetic-v4.5.4.min.js",
+		"/Library/WebServer/Documents/songcat/editor/index.html",
+		"/Library/WebServer/Documents/songcat/editor/js/editor.js",
+		"/Library/WebServer/Documents/songcat/editor/js/song.js",
+		"/Users/peetj/Data/Nexgen Software/Clients/Thinkful/docs/feedback/Rachael.txt",
+		"/Users/peetj/Downloads/cheat sheet for html and css.html",
+		"/Library/WebServer/Documents/htmlcheatsheet.html",
+		"/Library/WebServer/Documents/test.html",
+		"/Users/peetj/Dropbox/Public/projects/google/index.html",
+		"/Users/peetj/Dropbox/Public/projects/google/main.css",
+		"/Users/peetj/Data/Nexgen Software/Clients/Thinkful/TODO.txt",
+		"/Users/peetj/Data/Nexgen Software/Clients/Thinkful/docs/feedback/kelly.txt",
+		"/Library/WebServer/Documents/songcat/editor/js/songcatutils.js",
+		"/Library/WebServer/Documents/songcat/editor/templates/editor.templates.html",
+		"/Library/WebServer/Documents/songcat/songhtml/index.html",
+		"/Library/WebServer/Documents/songcat/editor/css/editor.css",
+		"/Library/WebServer/Documents/songcat/editor/js/jquery.hotkeys-0.7.9.js",
+		"/Users/peetj/Data/Nexgen Software/Clients/Thinkful/docs/README.TXT",
+		"/Library/WebServer/Documents/songcat/editor/js/jquery.ba-tinypubsub.min.js",
+		"/Library/WebServer/Documents/songcat/editor/js/preview.js",
+		"/Library/WebServer/Documents/songcat/editor/js/jquery.editinplace.js",
+		"/Library/WebServer/Documents/songcat/editor/css/reset.css",
+		"/Development/SongCatV2/Resources/templates/sc_song_main_template.tpl",
+		"/Users/peetj/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/peetj/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Development/SongCatV2/Resources/templates/sc_song_main.tpl",
+		"/Development/SongCatV2/Resources/templates/all.css",
+		"/Library/WebServer/Documents/songcat/songhtml/css/custom.css",
+		"/Library/WebServer/Documents/songcat/songhtml/css/main.css",
+		"/Library/WebServer/Documents/songcat/songhtml/custom.css",
+		"/Development/SongCatV2/Resources/templates/main.css",
+		"/Development/SongCatV2/Resources/templates/WebSocketTest2.js",
+		"/Development/SongCatV2/Resources/templates/ws.js",
+		"/Development/SongCatV2/Resources/templates/all.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/peetj/Temp/songbook/_ALL"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"else",
+			"worker",
+			"</div>",
+			"<div>",
+			"blockquote",
+			"getFirstChordInLine",
+			".html",
+			"_createChordElement",
+			"find",
+			"getFirstChord",
+			"getLastChord",
+			"selectP",
+			"selectPreviousChord",
+			"getLastChord",
+			"selectNextChord",
+			"selectNext",
+			"tabindex",
+			"addLine",
+			"tabindex",
+			"addLine",
+			"tabindex",
+			"tab",
+			"-1",
+			"getFirstChord",
+			"getFirstChord\ngetFirstChord",
+			"selectNextChord",
+			"chord/selectNext",
+			"toggleClass",
+			"unselectCurrentChord",
+			"selectChord",
+			"chord/selected",
+			"selectChord",
+			"move/chordRight",
+			"keydown",
+			"_move",
+			"chord/selected",
+			"selectChord",
+			"chord/selected",
+			"selectChord",
+			"deselectCurrentChord",
+			"chord/selected",
+			"duplicate",
+			"addLine",
+			"currentlySelectedChord",
+			"songcatSong",
+			"song",
+			"unselected",
+			"deselectCurrentChord",
+			"chord/selected",
+			"currentlySelectedChord",
+			"publish",
+			"duplicateChord",
+			"getNextChordId",
+			"duplicateChord",
+			"duplicate/chord",
+			"duplicateChord",
+			"duplicate",
+			"section/added",
+			"subscribe",
+			"createSectionElement",
+			"runHandlebarsTemplate",
+			"createSectionElement",
+			"í",
+			"addLine",
+			"triggerCallback",
+			"handleSubmitToCallback",
+			"callback",
+			"key",
+			"chords"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "octopress.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Library/WebServer/Documents/songcat/editor/songcateditor.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
