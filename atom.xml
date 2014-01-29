@@ -4,7 +4,7 @@
   <title><![CDATA[Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-01-30T01:10:10+11:00</updated>
+  <updated>2014-01-30T01:12:25+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -14,9 +14,9 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Introduction to CSS Positioning]]></title>
+    <title type="html"><![CDATA[Introduction To Css Positioning]]></title>
     <link href="http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning/"/>
-    <updated>2014-01-29T19:28:16+11:00</updated>
+    <updated>2014-01-29T00:00:00+11:00</updated>
     <id>http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning</id>
     <content type="html"><![CDATA[<h4>Level: Beginner</h4>
 
