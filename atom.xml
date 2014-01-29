@@ -4,7 +4,7 @@
   <title><![CDATA[Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-01-29T23:06:27+11:00</updated>
+  <updated>2014-01-29T23:30:13+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -23,6 +23,11 @@
 <h3>Introduction</h3>
 
 <p><em>The truth about CSS Positioning is that it&rsquo;s a pain in the ****</em></p>
+
+<!-- more -->
+
+
+
 
 <iframe style="width: 100%; height: 600px" frameborder="0" seamless="seamless" src="http://jsfiddle.net/TtK6R/embedded/result,html,css/light/"></iframe>
 
