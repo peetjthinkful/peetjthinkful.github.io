@@ -14,4 +14,4 @@ categories:
 _The truth about CSS Positioning is that it's a pain in the ****_
 
 
-{% jsfiddle TtK6R result,html,css default default 600px %}
+{% jsfiddle TtK6R result,html,css default 600px %}
