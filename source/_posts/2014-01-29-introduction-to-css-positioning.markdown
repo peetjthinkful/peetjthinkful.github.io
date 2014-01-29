@@ -13,5 +13,6 @@ categories:
 ###Introduction
 _The truth about CSS Positioning is that it's a pain in the ****_
 
+<!-- more -->
 
 {% jsfiddle TtK6R result,html,css default 600px %}
