@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: CSS | Petes Stuff]]></title>
+  <link href="http://peetjthinkful.github.io/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://peetjthinkful.github.io/"/>
+  <updated>2014-01-29T21:56:21+11:00</updated>
+  <id>http://peetjthinkful.github.io/</id>
+  <author>
+    <name><![CDATA[Pete Januarius]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Introduction to CSS Positioning]]></title>
+    <link href="http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning/"/>
+    <updated>2014-01-29T19:28:16+11:00</updated>
+    <id>http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning</id>
+    <content type="html"><![CDATA[<h4>Level: Beginner</h4>
+
+<h3>Introduction</h3>
+
+<p><em>The truth about CSS Positioning is that it&rsquo;s a pain in the ****</em></p>
+
+<p><iframe style="width: 100%; height: 300px" frameborder="0" seamless="seamless" src="http://jsfiddle.net/TtK6R/embedded/js,resources,html,css,result/light/"></iframe></p>
+]]></content>
+  </entry>
+  
+</feed>
