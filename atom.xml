@@ -4,7 +4,7 @@
   <title><![CDATA[Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-01-29T23:30:13+11:00</updated>
+  <updated>2014-01-30T01:10:10+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -22,7 +22,7 @@
 
 <h3>Introduction</h3>
 
-<p><em>The truth about CSS Positioning is that it&rsquo;s a pain in the ****</em></p>
+<p>_The truth about CSS Positioning is that it&rsquo;s a pain in the ****. No matter how many times I read up on the topic, it still eludes me from time to time. I think it&rsquo;s because pages can get pretty complex and each one is different. Well, this article is an attempt to tackle the issue head on with as little fluff as possible. We won&rsquo;t be covering all of the details but we will be providing some basic definitions and examples. Hopefully this can provide beginners with a helpful reference from which the topic can be investigated and hopefully mastered.</p>
 
 <!-- more -->
 
@@ -31,6 +31,10 @@
 
 <iframe style="width: 100%; height: 600px" frameborder="0" seamless="seamless" src="http://jsfiddle.net/TtK6R/embedded/result,html,css/light/"></iframe>
 
+
+<h3>Conclusion</h3>
+
+<p>As always, I recommend that you do a whole lot of reading on the subject. It will help your understanding. There are some references below which will help.</p>
 ]]></content>
   </entry>
   
@@ -46,6 +50,9 @@
 <p><em>This brief article is designed to be an illustration of how you could utilise objects in your code. It is not meant to be definitive, neither does it claim to be the optimum way of defining/creating objects. It does however aim to be an &lsquo;easy-ish&rsquo; way of getting into objects and how you might use them in a real world scenario.</em></p>
 
 <p><strong>During a mentor session with one of my students, we started talking about how she might approach the Shopping List project. The obvious and simplest approach was (from an implementation point of view) to hold a bunch of String objects inside an array. However, on reflection we felt that this could perhaps be too simplistic. For example, let&rsquo;s say that one of the projects&#8217; requirements was to be able to cross out items on the list instead of deleting the item. It would be pretty hard to implement this if all we had was an Array of String objects.</strong></p>
+
+<!-- more -->
+
 
 <p><em>Enter the Object</em>. As we discussed the problem, we realised that if we could perhaps have a slightly more complex representation of the item in the list, (after all, each item is a real thing, has certain properties and is certainly more than a just a string of letters!) then perhaps we could give the item a certain state which would mean that it is deleted but not removed from the list &ndash; ie. crossed out.</p>
 
