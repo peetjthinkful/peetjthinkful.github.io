@@ -1,7 +1,159 @@
 ---
 layout: post
-title: "First Post"
+title: "The Beginning of Octopress"
 date: 2014-01-12 02:35:59 +1100
 comments: true
-categories: 
+categories: octopress
 ---
+
+### Introduction
+_This is an experiment with Octopress. I've been using Wordpress for ages. Recently I've been hankering for a platform that is a lot simpler to use. That may seem a bit strange seeing as it is all commandline, github, Ruby...etc, but actually I'm talking about the writing of the posts as well as the generation of the site. I can write the posts in markdown, run a few commands and I have a site. I don't have to wait for slow http connections and faff around with HTML source code (not that its' hard - it is just messy when it shouldn't have to be). If you want to know how to setup and use Octopress - then read on..._
+
+### Setting up Octopress
+This was pretty easy actually. After struggling with Jekyll for a number of days (ultimately, my goal was to host the blog on GitHub and Jekyll just wasn't clear enough) I just happened to come across Octopress. It looked like a good option ie. no database, posts created in markdown or html, a statically generated (quick) site... so I decided to try it out. Well, I wasn't disappointed.
+
+There is no point me repeating the setup process here - I will just point you to the relevant link: [Setting up Octopress](http://octopress.org/docs/setup/ "Octopress Setup"). It's very good. Once you have installed Octopress and generated a site you have to deploy it. There are a few options here - my preferred one was to deploy to GitHub Pages.
+
+### Publishing your first post
+Let's say you are up and running and want to publish your first post. The process is beginning to smooth out nicely for me and goes something like this:
+
+####Assumptions
+1. You have a nice markdown editor and know how to use it (Try [Mou](http://mouapp.com/ "Mou") for the Mac).
+2. You have a [GitHub](http://github.com "GitHub") account.
+3. You know your way around the terminal.
+
+#### Deploying to GitHub Pages
+If you get to this stage, you will have installed Octopress as well as the Octopress theme using the command:
+	
+	rake install
+	
+I'm going to suggest that you follow the instructions on [Deploying to GitHub Pages](http://octopress.org/docs/deploying/github/). This involves creating a repository on GitHub and then running a setup command:
+
+	rake setup_github_pages
+	
+NB. All of these commands are executed on the terminal from your Octopress directory. Mine is installed at:
+
+	/Users/peetj/GitHub/octopress
+	
+Now you are ready to actually publish a post. The great thing about Octopress is that you can publish your posts in [Markdown](http://daringfireball.net/projects/markdown/) format. After years of using Wordpress and those ever so slightly dodgy HTML editors, I felt like this would be a breath of fresh air. Don't get me wrong. I've always loved WordPress especially the user interface and all the great plugins you could make use of. But let's face it, there is a lot of overhead going on there and pretty much like any CMS, it is a pain in the butt for non-techy users - no matter what the advocates say. Anyway I was right - now I use a lightweight editor - Mou (see above) which itself has a live preview mode. I get none of the fluff that is part of Microsoft Word and I get an overall pleasantly enjoyable writing experience.
+
+Posts are generally formatted like this:
+
+	yyyy-mm-dd-title-of-post.markdown
+	
+They are placed in the directory:
+
+	../octopress/source/_posts
+	
+You can also generate a new page which is probably a better idea because the post will contain some skeleton content. You can read about Octopress [blogging basics](http://octopress.org/docs/blogging/) here. Anyway, to generate a post do this:
+
+	rake new_post[my-new-post]
+	
+This will create a new (markdown) post in the ../octopress/source/_posts directory called 2014-02-28-my-new-post.markdown (assuming that today is 28 Feb 2014).
+
+So just to recap, we have installed Octopress, we have setup GitHub pages so that we can publish our posts at GitHub and we have created a new post. Now, open up the post in your favourite text editor. It should look something like this:
+
+	---
+	layout: post
+	title: "my-new-post"
+	date: 2014-02-28 5:59
+	comments: true
+	external-url:
+	categories:
+	---
+
+You can read the details in the 'Blogging Basics' link above about what options you have here but basically Octopress has generated some meta-data for you where you can tell it what to do ie. turn comments on or off, specify the layout, publish as draft (you would add another line that says 'published: false') and so on. Now that we have a post, we need to commit it to GitHub and publish it.
+
+#### Commit to GitHub
+Since we have created some new content, we need to publish it to Github. All we need to do is run the following commands:
+
+	git add .
+	git commit -m "Just created a cool new post"
+	git push origin source
+	
+The first commands adds any modified/new files to the staging area of your local repository. The second commands commits the files to the local repository. The third command syncs with GitHub. Now that you have all your changes on GitHub you can publish your post.
+
+#### Publish your Post
+Run the commands:
+
+	rake generate
+	rake deploy
+	
+This generates the new site and publishes the post. The output that follows the command will go something like this:
+
+	## Generating Site with Jekyll
+	unchanged sass/screen.scss
+	Configuration from /Users/peetj/GitHub/octopress/_config.yml
+	Building site: source -> public
+	Successfully generated site: source -> public
+	## Deploying branch to Github Pages 
+	## Pulling any updates from Github Pages 
+	cd _deploy
+	remote: Counting objects: 12, done.
+	remote: Compressing objects: 100% (2/2), done.
+	remote: Total 6 (delta 4), reused 6 (delta 4)
+	Unpacking objects: 100% (6/6), done.
+	From https://github.com/peetjthinkful/peetjthinkful.github.io
+	   32853f5..c71fd71  source     -> origin/source
+	There is no tracking information for the current branch.
+	Please specify which branch you want to merge with.
+	See git-pull(1) for details
+	
+	    git pull <remote> <branch>
+	
+	If you wish to set tracking information for this branch you can do so with:
+	
+	    git branch --set-upstream-to=origin/<branch> master
+	
+	cd -
+	rm -rf _deploy/assets
+	rm -rf _deploy/atom.xml
+	rm -rf _deploy/blog
+	rm -rf _deploy/CNAME
+	rm -rf _deploy/favicon.png
+	rm -rf _deploy/font
+	rm -rf _deploy/images
+	rm -rf _deploy/index.html
+	rm -rf _deploy/javascripts
+	rm -rf _deploy/robots.txt
+	rm -rf _deploy/sitemap.xml
+	rm -rf _deploy/stylesheets
+	
+	## Copying public to _deploy
+	cp -r public/. _deploy
+	cd _deploy
+	
+	## Committing: Site updated at 2014-01-29 14:10:14 UTC
+	[master ddfd6ae] Site updated at 2014-01-29 14:10:14 UTC
+	 12 files changed, 251 insertions(+), 138 deletions(-)
+	 create mode 100644 blog/categories/published-false/atom.xml
+	 create mode 100644 blog/categories/published-false/index.html
+	
+	## Pushing generated _deploy website
+	Counting objects: 48, done.
+	Delta compression using up to 8 threads.
+	Compressing objects: 100% (22/22), done.
+	Writing objects: 100% (26/26), 3.55 KiB | 0 bytes/s, done.
+	Total 26 (delta 13), reused 0 (delta 0)
+	To https://github.com/peetjthinkful/peetjthinkful.github.io.git
+	   5d1e15b..ddfd6ae  master -> master
+	
+	## Github Pages deploy complete
+
+So there you have it! How to make a start with Octopress. There are also many others using Octopress and quite a few of them have written about the transition. These are definitely worth a read if you want to start using Octopress - so I have listed a few that I have looked at myself below. Happy Blogging!
+
+### Others experiences with Octopress
+1. [Our experience with Jekyll and Octopress - Leena](http://www.multunus.com/blog/2012/10/our-experience-with-jekyll-and-octopress/)
+2. [Moving to Octopress - Seth Vargo](https://sethvargo.com/moving-to-octopress/)
+3. [Moving to Octopress - adis.me](http://adis.me/blog/2013/09/27/moving-to-octopress/)
+4. [Moving to Octopress - faehnri.ch](http://faehnri.ch/moving-to-octopress/)
+5. [Octopress Sites](https://github.com/imathis/octopress/wiki/Octopress-Sites)
+
+### Advanced Octopress Tips
+1. [Custom 404 Page for Octopress: Quick Tip](http://thematicnet.com/articles/custom-404-page-for-octopress/)
+2. [notes from dr. Awkward's holistic geekery](http://www.ubergeekunlimited.org/blog/2012/10/16/octopress-tips-and-tricks/)
+3. [Octopress Tips - Scott Watermasysk](http://dev.scottw.com/octopress-tips)
+4. [Octopress Cheat Sheet - revolunet blog](http://blog.revolunet.com/blog/2013/04/15/octopress-cheatsheet/)
+5. [Tips for speeding up Octopress Site Generation - Pixel-in-Gene](http://blog.pixelingene.com/2011/09/tips-for-speeding-up-octopress-site-generation/)
+6. [Some Octopress Rake Tips - Rob Dodson](http://robdodson.me/blog/2012/06/11/some-octopress-rake-tips/)
+
