@@ -7,7 +7,9 @@ categories: octopress
 ---
 
 ### Introduction
-_This is an experiment with Octopress. I've been using Wordpress for ages. Recently I've been hankering for a platform that is a lot simpler to use. That may seem a bit strange seeing as it is all commandline, github, Ruby...etc, but actually I'm talking about the writing of the posts as well as the generation of the site. I can write the posts in markdown, run a few commands and I have a site. I don't have to wait for slow http connections and faff around with HTML source code (not that its' hard - it is just messy when it shouldn't have to be). If you want to know how to setup and use Octopress - then read on..._
+_This is an experiment with Octopress. I've been using Wordpress for ages. Recently I've been hankering for a platform that is a lot simpler to use. That may seem a bit strange seeing as it is all commandline, github, Ruby...etc, but actually I'm talking about the writing of the posts as well as the generation of the site. I can write the posts in markdown, run a few commands and I have a site. I don't have to wait for slow http connections and faff around with HTML source code (not that its' hard - it is just messy when it shouldn't have to be). If you want to know how to setup and use Octopress..._
+
+<!-- more -->
 
 ### Setting up Octopress
 This was pretty easy actually. After struggling with Jekyll for a number of days (ultimately, my goal was to host the blog on GitHub and Jekyll just wasn't clear enough) I just happened to come across Octopress. It looked like a good option ie. no database, posts created in markdown or html, a statically generated (quick) site... so I decided to try it out. Well, I wasn't disappointed.
