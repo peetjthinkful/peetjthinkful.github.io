@@ -45,7 +45,7 @@ They are placed in the directory:
 
 	../octopress/source/_posts
 	
-You can also generate a new page which is probably a better idea because the post will contain some skeleton content. You can read about Octopress [blogging basics](http://octopress.org/docs/blogging/) here. Anyway, to generate a post do this:
+You can also generate a new post which is probably a better idea because the post will contain some skeleton content. You can read about Octopress [blogging basics](http://octopress.org/docs/blogging/) here. Anyway, to generate a post do this:
 
 	rake new_post[my-new-post]
 	
