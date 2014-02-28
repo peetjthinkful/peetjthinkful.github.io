@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-02-28T22:49:39+11:00</updated>
+  <updated>2014-02-28T23:00:44+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -70,7 +70,7 @@
 <pre><code>../octopress/source/_posts
 </code></pre>
 
-<p>You can also generate a new page which is probably a better idea because the post will contain some skeleton content. You can read about Octopress <a href="http://octopress.org/docs/blogging/">blogging basics</a> here. Anyway, to generate a post do this:</p>
+<p>You can also generate a new post which is probably a better idea because the post will contain some skeleton content. You can read about Octopress <a href="http://octopress.org/docs/blogging/">blogging basics</a> here. Anyway, to generate a post do this:</p>
 
 <pre><code>rake new_post[my-new-post]
 </code></pre>
