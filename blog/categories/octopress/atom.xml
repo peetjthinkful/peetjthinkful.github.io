@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-02-28T23:00:44+11:00</updated>
+  <updated>2014-02-28T23:20:18+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -20,7 +20,10 @@
     <id>http://peetjthinkful.github.io/blog/2014/01/12/first-post</id>
     <content type="html"><![CDATA[<h3>Introduction</h3>
 
-<p><em>This is an experiment with Octopress. I&rsquo;ve been using Wordpress for ages. Recently I&rsquo;ve been hankering for a platform that is a lot simpler to use. That may seem a bit strange seeing as it is all commandline, github, Ruby&hellip;etc, but actually I&rsquo;m talking about the writing of the posts as well as the generation of the site. I can write the posts in markdown, run a few commands and I have a site. I don&rsquo;t have to wait for slow http connections and faff around with HTML source code (not that its' hard &ndash; it is just messy when it shouldn&rsquo;t have to be). If you want to know how to setup and use Octopress &ndash; then read on&hellip;</em></p>
+<p><em>This is an experiment with Octopress. I&rsquo;ve been using Wordpress for ages. Recently I&rsquo;ve been hankering for a platform that is a lot simpler to use. That may seem a bit strange seeing as it is all commandline, github, Ruby&hellip;etc, but actually I&rsquo;m talking about the writing of the posts as well as the generation of the site. I can write the posts in markdown, run a few commands and I have a site. I don&rsquo;t have to wait for slow http connections and faff around with HTML source code (not that its' hard &ndash; it is just messy when it shouldn&rsquo;t have to be). If you want to know how to setup and use Octopress&hellip;</em></p>
+
+<!-- more -->
+
 
 <h3>Setting up Octopress</h3>
 
