@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: UX | Petes Stuff]]></title>
+  <link href="http://peetjthinkful.github.io/blog/categories/ux/atom.xml" rel="self"/>
+  <link href="http://peetjthinkful.github.io/"/>
+  <updated>2014-09-06T20:06:37+10:00</updated>
+  <id>http://peetjthinkful.github.io/</id>
+  <author>
+    <name><![CDATA[Pete Januarius]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[iPhone_photo_app]]></title>
+    <link href="http://peetjthinkful.github.io/blog/2014/09/06/iphone-photo-app/"/>
+    <updated>2014-09-06T12:15:20+10:00</updated>
+    <id>http://peetjthinkful.github.io/blog/2014/09/06/iphone-photo-app</id>
+    <content type="html"><![CDATA[<h3>Rethinking the design of the &lsquo;unlock&rsquo; screen</h3>
+
+<p>If you possess an iPhone, then you will be somewhat familiar with the &lsquo;unlock&rsquo; screen. It would look something like this:</p>
+
+<p><img src="../images/unlockscreen.png" title="Title" alt="alt text" /></p>
+
+<p><strong>My iPhone unlock screen</strong></p>
+
+<p>The problem I have is that I have quite small hands and being right handed I generally carry my phone in my left hand and use it with my right. &lsquo;So what?&rsquo; you might say! Well when I want to take a picture quickly I try to use my left hand to activate the camera from the camera icon. I usually find the swipe action next to impossible. Firstly my thumb doesn&rsquo;t really reach the icon without a stretch and secondly, because I have to stretch I find that I don&rsquo;t have much mobility in my thumb as a consequence.</p>
+
+<p><img src="../images/unlockscreen2.jpg" title="Title" alt="alt text" /></p>
+
+<p><strong>Me desperately trying to &lsquo;push&rsquo; the unlock screen up so I can get to the camera</strong></p>
+
+<p>I&rsquo;m hoping that the design is a bit different when the new (larger/wider) iPhone 6 comes out. Maybe the icon could be moved to the center somewhere or we there could be a little indicator arrow pointing up positioned bottom middle. This could reveal one or two functions on a single tap &ndash; one of which is the camera. It would be much easier to select it &ndash; with either hand!</p>
+
+<p>Hopefully all those right handed people with small hands will have something to celebrate come September 9. It&rsquo;s not a massive thing &ndash; but I believe it would be a UX improvement.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,59 @@
+[
+  {
+    "lng":149.1020789,
+    "lat":-35.3571862,
+    "address":"Hindmarsh Dr, Canberra, ACT",
+    "speedlimit": 100,
+    "category": 120
+  },
+  {
+    "lng":151.043139,
+    "lat":-31.0603899,
+    "address":"New England Hwy",
+    "speedlimit": 100,
+    "category": 120
+  },
+  {
+    "lng":150.8606807,
+    "lat":-31.4596725,
+    "address":"New England Hwy",
+    "speedlimit": 100,
+    "category": 120
+  },
+  {
+    "lng":149.8238857,
+    "lat":-36.5747471,
+    "address":"Princes Hwy",
+    "speedlimit": 100,
+    "category": 120
+  },
+  {
+    "lng":149.824917,
+    "lat":-36.576215,
+    "address":" Princes Hwy",
+    "speedlimit": 100,
+    "category": 120
+  },
+  {
+    "lng":150.9972647,
+    "lat":-33.8492101,
+    "address":"Oxford Woodville",
+    "speedlimit": 70,
+    "category": 70
+  },
+  {
+    "lng":150.892374,
+    "lat":-34.389672,
+    "address":"Balgownie Rd",
+    "speedlimit": 50,
+    "category": 50
+  },
+  {
+    "lng":149.127076,
+    "lat":-35.275495,
+    "address":"Barry Drv",
+    "speedlimit": 60,
+    "category": 70
+  }
+]
+

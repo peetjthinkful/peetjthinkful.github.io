@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Introduction to CSS Positioning - Petes Stuff</title>
+  <title>google-store-locator - Petes Stuff</title>
   <meta name="author" content="Pete Januarius">
 
   
-  <meta name="description" content="Level: Beginner Introduction _The truth about CSS Positioning is that it&rsquo;s a pain in the ****. No matter how many times I read up on the topic &hellip;">
+  <meta name="description" content="Speed Cameras in and around NSW One of my students at Thinkful wanted to knock up a site utilising the Google Store API. We decided that the easiest &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning/">
+  <link rel="canonical" href="http://peetjthinkful.github.io/blog/2014/03/14/google-store-locator/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.7.1.js"></script>
@@ -31,6 +31,8 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
 <!-- Custom CSS Stylesheets can be injected into each POST or PAGE via YAML front matter -->
+
+    <link href="/stylesheets/map.css" rel="stylesheet" type="text/css">
 
 
 
@@ -80,7 +82,7 @@
   <header>
     
       
-        <h1 class="entry-title">Introduction to CSS Positioning</h1>
+        <h1 class="entry-title">Google-store-locator</h1>
       
     
     
@@ -97,30 +99,54 @@
   
 
 
-<time datetime="2014-01-29T00:00:00+11:00" pubdate data-updated="true"></time>
+<time datetime="2014-03-14T01:51:58+11:00" pubdate data-updated="true">Mar 14<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h4>Level: Beginner</h4>
+<div class="entry-content"><div id="store-locator-container">
+  <div id="page-header">
+    <h1>Speed Cameras in and around NSW</h1>
 
-<h3>Introduction</h3>
+    <p style="width:600px;font-size:1.3em;">
+    One of my students at <a href="http://www.thinkful.com">Thinkful</a> wanted to knock up a site utilising the Google Store API. We decided that the easiest way was to use a great jQuery plugin by Bjorn Holine called (not surprisingly) the <a href="http://www.bjornblog.com/web/jquery-store-locator-plugin">jquery-store-locator-plugin</a>.
 
-<p>_The truth about CSS Positioning is that it&rsquo;s a pain in the ****. No matter how many times I read up on the topic, it still eludes me from time to time. I think it&rsquo;s because pages can get pretty complex and each one is different. Well, this article is an attempt to tackle the issue head on with as little fluff as possible. We won&rsquo;t be covering all of the details but we will be providing some basic definitions and examples. Hopefully this can provide beginners with a helpful reference from which the topic can be investigated and hopefully mastered.</p>
+    So I came up with a speed camera locator for NSW. I had to do a bit of tweaking to the plugin code plus some resource injection for this Octopress post. It took a fair few hours but hopefully the result was worth it. The source data was obtained from the <a href="http://data.gov.au">Australian Government</a>.
+    </p>
 
-<!-- more -->
+    <p style="font-size:1.4em;font-weight:bold">Type in a street name in NSW:</p>
+  </div>
 
+  <div id="form-container">
+    <form id="user-location" method="post" action="#">
+        <div id="form-input">
+          <label for="address">Enter Address:</label>
+          <input type="text" id="address" name="address" />
+          <select id="category">
+            <option val="40">Up to 40 km/h</option>
+            <option val="50">Up to 50 km/h</option>
+            <option val="60">Up to 60 km/h</option>
+            <option val="70">Up to 70 km/h</option>
+            <option val="80">Up to 80 km/h</option>
+            <option val="90">Up to 90 km/h</option>
+            <option val="100">Up to 100 km/h</option>
+            <option val="110">Up to 110 km/h</option>
+          </select>
+         </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
 
+  <div id="map-container">
+    <div id="loc-list">
+        <ul id="list"></ul>
+    </div>
+    <div id="map"></div>
+  </div>
+</div>
 
-
-<iframe style="width: 100%; height: 600px" frameborder="0" seamless="seamless" src="http://jsfiddle.net/TtK6R/embedded/result,html,css/light/"></iframe>
-
-
-<h3>Conclusion</h3>
-
-<p>As always, I recommend that you do a whole lot of reading on the subject. It will help your understanding. There are some references below which will help.</p>
 </div>
 
 
@@ -143,7 +169,7 @@
   
 
 
-<time datetime="2014-01-29T00:00:00+11:00" pubdate data-updated="true"></time>
+<time datetime="2014-03-14T01:51:58+11:00" pubdate data-updated="true">Mar 14<span>th</span>, 2014</time>
       
 
 
@@ -151,7 +177,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning/" data-via="" data-counturl="http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://peetjthinkful.github.io/blog/2014/03/14/google-store-locator/" data-via="" data-counturl="http://peetjthinkful.github.io/blog/2014/03/14/google-store-locator/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -164,10 +190,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left articlenav" href="/blog/2014/01/22/introduction-to-objects/" title="Previous Post: Introduction to Objects">&laquo; Introduction to Objects</a>
+        <a class="basic-alignment left articlenav" href="/blog/2014/01/29/introduction-to-css-positioning/" title="Previous Post: Introduction to CSS Positioning">&laquo; Introduction to CSS Positioning</a>
       
       
-        <a class="basic-alignment right articlenav" href="/blog/2014/03/14/google-store-locator/" title="Next Post: google-store-locator">google-store-locator &raquo;</a>
+        <a class="basic-alignment right articlenav" href="/blog/2014/09/06/iphone-photo-app/" title="Next Post: iPhone_photo_app">iPhone_photo_app &raquo;</a>
       
     </p>
   </footer>
@@ -271,8 +297,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning/';
-        var disqus_url = 'http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning/';
+        var disqus_identifier = 'http://peetjthinkful.github.io/blog/2014/03/14/google-store-locator/';
+        var disqus_url = 'http://peetjthinkful.github.io/blog/2014/03/14/google-store-locator/';
         var disqus_script = 'embed.js';
       
     (function () {
@@ -319,6 +345,16 @@
 
 <!-- Custom JavaScript files set in YAML front matter -->
 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+
+    <script type="text/javascript" src="/javascripts/libs/jquery.storelocator.js"></script>
+
+    <script type="text/javascript" src="/javascripts/main.js"></script>
 
 
 

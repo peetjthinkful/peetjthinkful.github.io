@@ -4,7 +4,7 @@
   <title><![CDATA[Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-03-01T00:45:59+11:00</updated>
+  <updated>2014-09-06T20:06:37+10:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -14,7 +14,81 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Introduction To Css Positioning]]></title>
+    <title type="html"><![CDATA[iPhone_photo_app]]></title>
+    <link href="http://peetjthinkful.github.io/blog/2014/09/06/iphone-photo-app/"/>
+    <updated>2014-09-06T12:15:20+10:00</updated>
+    <id>http://peetjthinkful.github.io/blog/2014/09/06/iphone-photo-app</id>
+    <content type="html"><![CDATA[<h3>Rethinking the design of the &lsquo;unlock&rsquo; screen</h3>
+
+<p>If you possess an iPhone, then you will be somewhat familiar with the &lsquo;unlock&rsquo; screen. It would look something like this:</p>
+
+<p><img src="../images/unlockscreen.png" title="Title" alt="alt text" /></p>
+
+<p><strong>My iPhone unlock screen</strong></p>
+
+<p>The problem I have is that I have quite small hands and being right handed I generally carry my phone in my left hand and use it with my right. &lsquo;So what?&rsquo; you might say! Well when I want to take a picture quickly I try to use my left hand to activate the camera from the camera icon. I usually find the swipe action next to impossible. Firstly my thumb doesn&rsquo;t really reach the icon without a stretch and secondly, because I have to stretch I find that I don&rsquo;t have much mobility in my thumb as a consequence.</p>
+
+<p><img src="../images/unlockscreen2.jpg" title="Title" alt="alt text" /></p>
+
+<p><strong>Me desperately trying to &lsquo;push&rsquo; the unlock screen up so I can get to the camera</strong></p>
+
+<p>I&rsquo;m hoping that the design is a bit different when the new (larger/wider) iPhone 6 comes out. Maybe the icon could be moved to the center somewhere or we there could be a little indicator arrow pointing up positioned bottom middle. This could reveal one or two functions on a single tap &ndash; one of which is the camera. It would be much easier to select it &ndash; with either hand!</p>
+
+<p>Hopefully all those right handed people with small hands will have something to celebrate come September 9. It&rsquo;s not a massive thing &ndash; but I believe it would be a UX improvement.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[google-store-locator]]></title>
+    <link href="http://peetjthinkful.github.io/blog/2014/03/14/google-store-locator/"/>
+    <updated>2014-03-14T01:51:58+11:00</updated>
+    <id>http://peetjthinkful.github.io/blog/2014/03/14/google-store-locator</id>
+    <content type="html"><![CDATA[<div id="store-locator-container">
+  <div id="page-header">
+    <h1>Speed Cameras in and around NSW</h1>
+
+    <p style="width:600px;font-size:1.3em;">
+    One of my students at <a href="http://www.thinkful.com">Thinkful</a> wanted to knock up a site utilising the Google Store API. We decided that the easiest way was to use a great jQuery plugin by Bjorn Holine called (not surprisingly) the <a href="http://www.bjornblog.com/web/jquery-store-locator-plugin">jquery-store-locator-plugin</a>.
+
+    So I came up with a speed camera locator for NSW. I had to do a bit of tweaking to the plugin code plus some resource injection for this Octopress post. It took a fair few hours but hopefully the result was worth it. The source data was obtained from the <a href="http://data.gov.au">Australian Government</a>.
+    </p>
+
+    <p style="font-size:1.4em;font-weight:bold">Type in a street name in NSW:</p>
+  </div>
+
+  <div id="form-container">
+    <form id="user-location" method="post" action="#">
+        <div id="form-input">
+          <label for="address">Enter Address:</label>
+          <input type="text" id="address" name="address" />
+          <select id="category">
+            <option val="40">Up to 40 km/h</option>
+            <option val="50">Up to 50 km/h</option>
+            <option val="60">Up to 60 km/h</option>
+            <option val="70">Up to 70 km/h</option>
+            <option val="80">Up to 80 km/h</option>
+            <option val="90">Up to 90 km/h</option>
+            <option val="100">Up to 100 km/h</option>
+            <option val="110">Up to 110 km/h</option>
+          </select>
+         </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="map-container">
+    <div id="loc-list">
+        <ul id="list"></ul>
+    </div>
+    <div id="map"></div>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Introduction to CSS Positioning]]></title>
     <link href="http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning/"/>
     <updated>2014-01-29T00:00:00+11:00</updated>
     <id>http://peetjthinkful.github.io/blog/2014/01/29/introduction-to-css-positioning</id>
