@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"p",
+				"peetjthinkful"
+			],
+			[
 				"en",
 				"enemy2"
 			],
@@ -50,10 +54,6 @@
 			[
 				"selet",
 				"selectNextChord"
-			],
-			[
-				"p",
-				"prototype"
 			],
 			[
 				"stop",
@@ -156,35 +156,35 @@
 	"buffers":
 	[
 		{
+			"file": "source/stylesheets/map.css",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 3885,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_config.yml",
+			"file": "source/_posts/2014-03-14-google-store-locator.markdown",
 			"settings":
 			{
-				"buffer_size": 2892,
+				"buffer_size": 2288,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".themes/darkstripes/source/_includes/custom/header.html",
+			"file": "source/javascripts/libs/jquery.storelocator.js",
 			"settings":
 			{
-				"buffer_size": 327,
+				"buffer_size": 30004,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/CNAME",
+			"file": "source/javascripts/main.js",
 			"settings":
 			{
-				"buffer_size": 8,
-				"line_ending": "Unix",
-				"name": "peetj.me"
+				"buffer_size": 684,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -224,6 +224,23 @@
 	},
 	"file_history":
 	[
+		"/Users/peetj/GitHub/octopress/source/_includes/custom/navigation.html",
+		"/Users/peetj/GitHub/octopress/source/_includes/custom/after_footer.html",
+		"/Users/peetj/GitHub/octopress/source/_includes/custom/head.html",
+		"/Users/peetj/GitHub/octopress/source/_includes/head.html",
+		"/Users/peetj/GitHub/octopress/source/_posts/2014-03-14-google-store-locator.markdown",
+		"/Users/peetj/GitHub/octopress/source/javascripts/octopress.js",
+		"/Users/peetj/GitHub/octopress/source/nsw-speed-cameras/index.markdown",
+		"/Users/peetj/GitHub/octopress/public/javascripts/jquery.storelocator.js",
+		"/Users/peetj/GitHub/octopress/Gemfile",
+		"/Users/peetj/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/peetj/GitHub/octopress/Guardfile",
+		"/Users/peetj/GitHub/octopress/source/_posts/2014-01-29-introduction-to-css-positioning.markdown-in-progress",
+		"/Users/peetj/GitHub/octopress/public/blog/2014/01/29/introduction-to-css-positioning/index.html",
+		"/Users/peetj/GitHub/octopress/_config.yml",
+		"/Users/peetj/GitHub/octopress/source/_includes/custom/header.html",
+		"/Users/peetj/GitHub/octopress/.themes/darkstripes/source/_includes/custom/header.html",
+		"/Users/peetj/GitHub/octopress/source/CNAME",
 		"/Users/peetj/GitHub/Nestable/index2.html",
 		"/Users/peetj/GitHub/Nestable/jquery.nestable.js",
 		"/Users/peetj/GitHub/front-end-web-dev-code-examples/positioning/example4/README.md",
@@ -233,7 +250,6 @@
 		"/Library/Development/cricketscorer/Cricket Scorer/Cricket Scorer/games.json",
 		"/Users/peetj/Projects/steroids/myProject/config/application.coffee.test",
 		"/Users/peetj/Downloads/Assesment_2/application.macosx/source/Assesment_2.java",
-		"/Users/peetj/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/peetj/Projects/corona/spaceinvaders/background.png",
 		"/Users/peetj/Projects/corona/bball/main.lua",
 		"/Library/WebServer/Documents/easeljs/easel.sublime-project",
@@ -274,7 +290,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -289,6 +305,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"thirds",
+			"third",
 			"else",
 			"worker",
 			"</div>",
@@ -377,31 +395,33 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "source/stylesheets/map.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 3885,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3881,
+								3881
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3536.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -409,84 +429,86 @@
 				},
 				{
 					"buffer": 1,
-					"file": "_config.yml",
+					"file": "source/_posts/2014-03-14-google-store-locator.markdown",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2892,
+						"buffer_size": 2288,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2017,
+								2017
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".themes/darkstripes/source/_includes/custom/header.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								83,
-								83
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 481.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "source/CNAME",
-					"semi_transient": false,
+					"buffer": 2,
+					"file": "source/javascripts/libs/jquery.storelocator.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 8,
+						"buffer_size": 30004,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8,
-								8
+								18809,
+								18809
 							]
 						],
 						"settings":
 						{
-							"auto_name": "peetj.me",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 424.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/javascripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -578,7 +600,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 228.0,
+	"side_bar_width": 290.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

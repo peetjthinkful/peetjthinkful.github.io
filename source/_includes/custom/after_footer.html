@@ -1,3 +1,10 @@
 {% comment %}
   Add content to be output at the bottom of each page. (You might use this for analytics scripts, for example)
 {% endcomment %}
+<!-- Custom JavaScript files set in YAML front matter -->
+{% for js in page.customcdnjs %}
+    <script type="text/javascript" src="{{ js.item }}"></script>
+{% endfor %}
+{% for js in page.customjs %}
+    <script type="text/javascript" src="{{ root_url }}{{ js.item }}"></script>
+{% endfor %}

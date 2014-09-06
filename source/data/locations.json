@@ -1,0 +1,931 @@
+[
+  {
+    "lng":151.043139,
+    "lat":-31.0603899,
+    "address":"New England Hwy",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":150.8606807,
+    "lat":-31.4596725,
+    "address":"New England Hwy",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":149.8238857,
+    "lat":-36.5747471,
+    "address":"Princes Hwy",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":149.824917,
+    "lat":-36.576215,
+    "address":"Princes Hwy 2",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":150.9972647,
+    "lat":-33.8492101,
+    "address":"Oxford Woodville",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":150.892374,
+    "lat":-34.389672,
+    "address":"Balgownie Rd",
+		"speedlimit": 50,
+		"category": 50
+  },
+  {
+    "lng":149.127076,
+    "lat":-35.275495,
+    "address":"Barry Drv",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.632569,
+    "lat":-33.533609,
+    "address":"Bells Line Of Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.170631,
+    "lat":-33.752099,
+    "address":"Birdwood Av",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.326816,
+    "lat":-33.491174,
+    "address":"Blackwall Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.10195,
+    "lat":-33.803208,
+    "address":"Blaxland Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.605928,
+    "lat":-34.85761,
+    "address":"Bolong Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.731486,
+    "lat":-34.844873,
+    "address":"Bolong Rd2",
+		"speedlimit": 90,
+		"category": 90
+  },
+  {
+    "lng":151.114663,
+    "lat":-33.913884,
+    "address":"Canterbury Rd 1",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.068095,
+    "lat":-33.773782,
+    "address":"Carlingford Rd 6",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.038899,
+    "lat":-33.740054,
+    "address":"Castle Hill Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.157849,
+    "lat":-33.812964,
+    "address":"Centennial Ave",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.089804,
+    "lat":-33.849219,
+    "address":"Concord Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.855186,
+    "lat":-33.902977,
+    "address":"Cowpasture Rd",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":151.131362,
+    "lat":-34.035811,
+    "address":"Cptn Cook Drive",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "name": "Cross City1",
+    "lng":151.200995,
+    "lat":-33.874144,
+    "address":"Cross City Tunnel 1  80; 22",
+    "city": "Sydney"
+  },
+  {
+    "name": "Cross City2",
+    "lng":151.203158,
+    "lat":-33.87465,
+    "address":"Cross City Tunnel 2  80; 23",
+    "city": "Sydney"
+  },
+  {
+    "name": "Cross City3",
+    "lng":151.22515,
+    "lat":-33.876494,
+    "address":"Cross City Tunnel 3  80; 24",
+    "city": "Sydney"
+  },
+  {
+    "lng":142.15731,
+    "lat":-34.189385,
+    "address":"Deaken Ave 1",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":142.153618,
+    "lat":-34.192392,
+    "address":"Deaken Ave 2",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.145343,
+    "lat":-33.795991,
+    "address":"Delhi Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.056386,
+    "lat":-35.378502,
+    "address":"Drakeford Drv",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":144.263343,
+    "lat":-36.755573,
+    "address":"Eaglehawk Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.218069,
+    "lat":-33.871099,
+    "address":"Eastern Distributor 1",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.217189,
+    "lat":-33.882778,
+    "address":"Eastern Distributor Tunnel 1",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.207991,
+    "lat":-33.794096,
+    "address":"Eastern Valley Way",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.894484,
+    "lat":-33.898179,
+    "address":"Elizabeth Dr",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.183952,
+    "lat":-33.488112,
+    "address":"F3 Motorway",
+		"speedlimit": 90,
+		"category": 90
+  },
+  {
+    "lng":150.978938,
+    "lat":-33.869646,
+    "address":"Fairfield St",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.1703641,
+    "lat":-35.2229711,
+    "address":"Federal Highway",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":150.892541,
+    "lat":-34.41153,
+    "address":"Flinders St1",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.181376,
+    "lat":-33.945887,
+    "address":"General Holmes Dr",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.795108,
+    "lat":-33.628397,
+    "address":"George St",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.027547,
+    "lat":-33.939695,
+    "address":"Gibson Ave",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.081251,
+    "lat":-35.231173,
+    "address":"Ginninderra Dr 1",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":149.063545,
+    "lat":-35.22186,
+    "address":"Ginninderra Dr 2",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":150.170881,
+    "lat":-33.543883,
+    "address":"Great Western Hwy 1",
+		"speedlimit": 90,
+		"category": 90
+  },
+  {
+    "lng":150.59191,
+    "lat":-33.711888,
+    "address":"Great Western Hwy 2",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":150.932717,
+    "lat":-33.822932,
+    "address":"Greystanes Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.213328,
+    "lat":-33.85306,
+    "address":"Harbour Tunnel 1",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.213464,
+    "lat":-33.852775,
+    "address":"Harbour Tunnel 2",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.010094,
+    "lat":-33.97923,
+    "address":"Henry Lawson Dr 1",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.049576,
+    "lat":-33.960979,
+    "address":"Henry Lawson Dr 2",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.349507,
+    "lat":-33.413724,
+    "address":"Henry Parry Dr",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":144.270746,
+    "lat":-36.763547,
+    "address":"High St 1",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":144.270449,
+    "lat":-36.763573,
+    "address":"High St 2",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.101249,
+    "lat":-35.350676,
+    "address":"Hindmarsh Drv 1",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":149.067876,
+    "lat":-35.348208,
+    "address":"Hindmarsh Drv 2",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.00851,
+    "lat":-33.90473,
+    "address":"Hume Hwy 1",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":147.770255,
+    "lat":-35.239595,
+    "address":"Hume Hwy 2",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":148.185108,
+    "lat":-34.905999,
+    "address":"Hume Hwy 3",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.092727,
+    "lat":-33.886536,
+    "address":"Hume Hwy 4",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.965309,
+    "lat":-33.891351,
+    "address":"Hume Hwy 5",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":147.736615,
+    "lat":-35.277165,
+    "address":"Hume HwyTarcutta",
+		"speedlimit": 50,
+		"category": 50
+  },
+  {
+    "lng":151.022383,
+    "lat":-33.815388,
+    "address":"James Ruse Dr",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":149.19407,
+    "lat":-35.37402,
+    "address":"Lanyon Drv",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.104962,
+    "lat":-33.887522,
+    "address":"Liverpool Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.964379,
+    "lat":-33.816208,
+    "address":"M4 Motorway 2",
+		"speedlimit": 90,
+		"category": 90
+  },
+  {
+    "lng":150.9638086,
+    "lat":-33.8159663,
+    "address":"M4 Speed Camera",
+		"speedlimit": 90,
+		"category": 90
+  },
+  {
+    "lng":151.153201,
+    "lat":-33.937973,
+    "address":"M5 Motorway 1",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.111098,
+    "lat":-33.935963,
+    "address":"M5 Motorway 2",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.111274,
+    "lat":-33.936156,
+    "address":"M5 Motorway 3",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.232003,
+    "lat":-33.822441,
+    "address":"Macpherson Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.704627,
+    "lat":-32.857132,
+    "address":"Maitland Rd 1",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.704073,
+    "lat":-32.856356,
+    "address":"Maitland Rd 2",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.729699,
+    "lat":-32.892235,
+    "address":"Maitland Rd 3",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.319512,
+    "lat":-33.420679,
+    "address":"Manns Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.68205,
+    "lat":-32.925256,
+    "address":"Mccaffrey Dr",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":144.4046876,
+    "lat":-36.6540159,
+    "address":"Midland Hwy A300; 75"
+  },
+  {
+    "lng":149.134712,
+    "lat":-36.229645,
+    "address":"Monaro Hwy",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":152.016686,
+    "lat":-29.040242,
+    "address":"New England Hwy 1",
+		"speedlimit": 50,
+		"category": 50
+  },
+  {
+    "lng":151.458093,
+    "lat":-32.699477,
+    "address":"New England Hwy 10",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.895691,
+    "lat":-31.783701,
+    "address":"New England Hwy 11",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":150.821927,
+    "lat":-31.757124,
+    "address":"New England Hwy 13",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":152.018987,
+    "lat":-29.054305,
+    "address":"New England Hwy 2",
+		"speedlimit": 50,
+		"category": 50
+  },
+  {
+    "lng":150.864687,
+    "lat":-32.039281,
+    "address":"New England Hwy 2",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.677064,
+    "lat":-30.449111,
+    "address":"New England Hwy 3",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.69103,
+    "lat":-30.395163,
+    "address":"New England Hwy 4",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.71486,
+    "lat":-30.006227,
+    "address":"New England Hwy 5",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.720438,
+    "lat":-30.084845,
+    "address":"New England Hwy 6",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.68569,
+    "lat":-30.125077,
+    "address":"New England Hwy 7",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.273212,
+    "lat":-32.653272,
+    "address":"New England Hwy 8",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.860673,
+    "lat":-31.459547,
+    "address":"New England Hwy 9",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.230583,
+    "lat":-33.876486,
+    "address":"New South Head Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.698,
+    "lat":-32.907984,
+    "address":"Newcastle Rd",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":149.129187,
+    "lat":-35.279435,
+    "address":"Northbourne Ave 1",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.129407,
+    "lat":-35.275989,
+    "address":"Northbourne Ave 2",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.134151,
+    "lat":-35.247993,
+    "address":"Northbourne Ave 3",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.876173,
+    "lat":-34.491867,
+    "address":"Northcliffe Dr",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.900489,
+    "lat":-34.377938,
+    "address":"Northern Distributor 1",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":150.900613,
+    "lat":-34.378012,
+    "address":"Northern Distributor 2",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.319792,
+    "lat":-33.504398,
+    "address":"Ocean Beach Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":144.75009,
+    "lat":-36.140435,
+    "address":"Ogilvie Ave",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":151.0162789,
+    "lat":-33.7171192,
+    "address":"Old Northern Rd",
+		"speedlimit": 40,
+		"category": 40
+  },
+  {
+    "lng":152.823753,
+    "lat":-31.181746,
+    "address":"Pacific Hwy 1",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.613172,
+    "lat":-33.134071,
+    "address":"Pacific Hwy 10",
+		"speedlimit": 90,
+		"category": 90
+  },
+  {
+    "lng":152.730654,
+    "lat":-31.582861,
+    "address":"Pacific Hwy 14",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":152.965254,
+    "lat":-30.69671,
+    "address":"Pacific Hwy 9",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.692117,
+    "lat":-32.983676,
+    "address":"Pacific Hwy Gateshead",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.369752,
+    "lat":-33.353415,
+    "address":"Pacific Hwy Ourimbah",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.023266,
+    "lat":-33.835874,
+    "address":"Parramatta Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.008135,
+    "lat":-33.800862,
+    "address":"Pennant Hills Rd 1",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.048973,
+    "lat":-33.782557,
+    "address":"Pennant Hills Rd 2",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.083767,
+    "lat":-34.037544,
+    "address":"President Ave",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.869738,
+    "lat":-34.426982,
+    "address":"Princes Hwy 11",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.604044,
+    "lat":-34.869183,
+    "address":"Princes Hwy 12",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":150.729576,
+    "lat":-34.763152,
+    "address":"Princes Hwy 15",
+		"speedlimit": 90,
+		"category": 90
+  },
+  {
+    "lng":150.686336,
+    "lat":-34.774284,
+    "address":"Princes Hwy 16",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.849126,
+    "lat":-36.625164,
+    "address":"Princes Hwy 17",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.136318,
+    "lat":-33.968137,
+    "address":"Princes Hwy 18",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.829067,
+    "lat":-36.519236,
+    "address":"Princes Hwy 19",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.136623,
+    "lat":-33.967299,
+    "address":"Princes Hwy 20",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.761436,
+    "lat":-34.742239,
+    "address":"Princes Hwy 22",
+		"speedlimit": 90,
+		"category": 90
+  },
+  {
+    "lng":150.913918,
+    "lat":-34.330014,
+    "address":"Princes Hwy 4",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":150.913627,
+    "lat":-34.331576,
+    "address":"Princes Hwy 5",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.83626,
+    "lat":-36.630999,
+    "address":"Princes Hwy 9",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":150.797334,
+    "lat":-33.661195,
+    "address":"Richmond Rd",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":150.883776,
+    "lat":-34.406238,
+    "address":"Southern Fwy 1",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":150.881356,
+    "lat":-34.414762,
+    "address":"Southern Fwy 2",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":150.8552166,
+    "lat":-33.9029696,
+    "address":"Speed Camera 201",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":151.245353,
+    "lat":-33.809942,
+    "address":"Spit Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.342852,
+    "lat":-33.358225,
+    "address":"Sydney Newcastle Fwy",
+		"speedlimit": 110,
+		"category": 110
+  },
+  {
+    "lng":151.430839,
+    "lat":-33.439497,
+    "address":"Terrigal Dr",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":151.475018,
+    "lat":-33.37174,
+    "address":"The Entrance Rd",
+		"speedlimit": 60,
+		"category": 60
+  },
+  {
+    "lng":149.0632076,
+    "lat":-35.3211441,
+    "address":"Tuggeranong Parkway",
+		"speedlimit": 100,
+		"category": 100
+  },
+  {
+    "lng":151.210677,
+    "lat":-33.841141,
+    "address":"Warringah Fwy",
+		"speedlimit": 80,
+		"category": 80
+  },
+  {
+    "lng":151.225538,
+    "lat":-33.752585,
+    "address":"Warringah Rd",
+		"speedlimit": 70,
+		"category": 70
+  },
+  {
+    "lng":151.295146,
+    "lat":-33.481144,
+    "address":"Woy Woy Bay",
+		"speedlimit": 80,
+		"category": 80
+  }
+]
