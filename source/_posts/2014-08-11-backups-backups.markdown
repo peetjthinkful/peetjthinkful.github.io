@@ -6,7 +6,6 @@ comments: true
 categories: IT
 ---
 
-###Backups, backups and more backups
 You would've thought that I had learnt my lesson when it comes to backing up my files. I think I  must have helped dozens of friends over the years who had lost a critical file and hadn't made a backup. Well I managed to do exactly the same thing at work the other day. 
 
 I was working in [Sublime Text 3](http://www.sublimetext.com/) on Windows and managed to lose a mornings work - Doh! I quickly realised that I had no local history and hadn't committed to any repository for a while. Hmmmm... what to do! Well nothing actually, I just had to write all the code again !!!
@@ -19,9 +18,9 @@ It helps if you have the [package installer](https://sublime.wbond.net/) for ST.
 
 Once installed, I just configured the user settings to have a `history_retention` of 90 days:
 
-`{
+	{
       "history_retention": 90, // in days
-}`
+	}
 
 Seems to work really well!
 
