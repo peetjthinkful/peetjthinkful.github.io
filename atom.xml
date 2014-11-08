@@ -4,7 +4,7 @@
   <title><![CDATA[Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-11-08T21:48:09+11:00</updated>
+  <updated>2014-11-08T22:00:45+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -18,9 +18,7 @@
     <link href="http://peetjthinkful.github.io/blog/2014/11/08/backups-backups/"/>
     <updated>2014-11-08T19:07:00+11:00</updated>
     <id>http://peetjthinkful.github.io/blog/2014/11/08/backups-backups</id>
-    <content type="html"><![CDATA[<h3>Backups, backups and more backups</h3>
-
-<p>You would&rsquo;ve thought that I had learnt my lesson when it comes to backing up my files. I think I  must have helped dozens of friends over the years who had lost a critical file and hadn&rsquo;t made a backup. Well I managed to do exactly the same thing at work the other day.</p>
+    <content type="html"><![CDATA[<p>You would&rsquo;ve thought that I had learnt my lesson when it comes to backing up my files. I think I  must have helped dozens of friends over the years who had lost a critical file and hadn&rsquo;t made a backup. Well I managed to do exactly the same thing at work the other day.</p>
 
 <p>I was working in <a href="http://www.sublimetext.com/">Sublime Text 3</a> on Windows and managed to lose a mornings work &ndash; Doh! I quickly realised that I had no local history and hadn&rsquo;t committed to any repository for a while. Hmmmm&hellip; what to do! Well nothing actually, I just had to write all the code again !!!</p>
 
@@ -32,12 +30,10 @@
 
 <p>Once installed, I just configured the user settings to have a <code>history_retention</code> of 90 days:</p>
 
-<p>`{</p>
-
-<pre><code>  "history_retention": 90, // in days
+<pre><code>{
+  "history_retention": 90, // in days
+}
 </code></pre>
-
-<p>}`</p>
 
 <p>Seems to work really well!</p>
 
