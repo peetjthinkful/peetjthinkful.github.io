@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-11-20T01:06:06+11:00</updated>
+  <updated>2014-11-20T01:16:25+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -24,7 +24,7 @@
 
 <p>Any project with more than a single developer will invariably mean that one day you will have to hand over your code (probably many thousands of lines of Javascript or something similar!) to your team mate while you go off skiing for a week. Well let&rsquo;s hope your design is as simple as you can make it because otherwise he or she will give you the cold shoulder when you get back!!</p>
 
-<p>Seriously though, simplcity means a reusable and extensible system. Not to mention that such things are more fun to work on than over-engineered monstrosities. I personally have worked with components that were so complex in their design that I was at a total loss when any adjustments had to be made. I have subsequently worked with components that have the same functionality but were incredibly simple to use and work with. Sometimes developers are too clever for their own good!</p>
+<p>Seriously though, simplicity means a reusable and extensible system. Not to mention that such things are more fun to work on than over-engineered monstrosities. I personally have worked with components that were so complex in their design that I was at a total loss when any adjustments had to be made. I have subsequently worked with components that have the same functionality but were incredibly simple to use and work with. Sometimes developers are too clever for their own good!</p>
 
 <p>Next time you have to design and code something, think of your team mates as well as your users&hellip;and keep it simple!</p>
 ]]></content>
