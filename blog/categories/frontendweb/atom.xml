@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: development | Petes Stuff]]></title>
-  <link href="http://peetjthinkful.github.io/blog/categories/development/atom.xml" rel="self"/>
+  <title><![CDATA[Category: frontendweb | Petes Stuff]]></title>
+  <link href="http://peetjthinkful.github.io/blog/categories/frontendweb/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
   <updated>2014-11-20T23:51:25+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>

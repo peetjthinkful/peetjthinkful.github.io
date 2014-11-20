@@ -9,7 +9,7 @@
   <meta name="author" content="Pete Januarius">
 
   
-  <meta name="description" content="One of the most important factors to keep in mind when developing any non-trivial application is maintenence. If an issue arises or additional &hellip;">
+  <meta name="description" content="I was once asked in an interview by a very smart architect to describe the most important aspects of a good architecture. I replied that it should be &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+        <h1 class="entry-title"><a href="/blog/2014/11/21/principles-of-dev-2-decoupling/">Principles of Development #2 - Decoupling</a></h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-21T13:15:20+11:00" pubdate data-updated="true">Nov 21<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was once asked in an interview by a very smart architect to describe the most important aspects of a good architecture. I replied that it should be simple and decoupled. Fortunately he agreed with me although I didn&rsquo;t end up working for the company!</p>
+
+<p>I believe that if you have these 2 things going for you then you are off to a great start. Often, other facets of a good architecture follow from these two principles. For example &lsquo;extensibility&rsquo; &ndash; the ease of adding new and extra functionality to your existing system. A decoupled system will certainly enable you to add new parts with minimal fuss.</p>
+
+<p>The key here is dependency. In a decoupled system, each &lsquo;component&rsquo; works without needing the other components in the system ie. a given component is not dependent on any other. If it were, then we wouldn&rsquo;t even be able to load and initialise it without loading some other component first.</p>
+
+<p>So, how does such a system work. Well one way of making this work is by implementing some kind of message layer. Components talk to each other by passing and receiving  messages. Let&rsquo;s look at an example to round things off.</p>
+
+<p>Let&rsquo;s imagine that our system is made up of a mapping component (MP1) and a graphing component (G1). The job of MP1 is to display a map of Australia revealing the 50 hottest places last summer. These show up as &lsquo;hot spots&rsquo; on the map when it is rendered. MP1 then &lsquo;publishes&rsquo; a message to the message layer. The message itself contains an identifier and a payload. The identifier is just a name &ndash; let&rsquo;s call it &lsquo;HOTSPOT_DATA_MSG&rsquo;. The payload contains some structured data obviously related to the top 50 hotspots.</p>
+
+<p>Meanwhile, G1 has informed the message layer that it would like to know about any message with the name HOTSPOT_DATA_MSG &ndash; in other words it &lsquo;subscribes&rsquo; to a message with a particular name. Whenever such a message is sent, G1 receives it and displays a nice graph of the temperatures of the 50 hottest places in Australia.</p>
+
+<p>You will notice that there is a single dependency in this kind of a system. every component is dependent on the messaging layer component which itself exists just to send and receive messages between components like a kind of telephone exchange operator. This enables components to both co-exist without depending on each other. The only dependencies are the core aspects of the system.</p>
+
+<p><img src="/images/component-messaging.png" title="Component Messaging" alt="alt text" /></p>
+
+<p><strong>Decoupling Components</strong></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -472,6 +526,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/11/21/principles-of-dev-2-decoupling/">Principles of Development #2 - Decoupling</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/11/20/principles-of-dev-1-simplicity/">Principles of Development #1 - Simplicity</a>
       </li>
     
@@ -485,10 +543,6 @@
     
       <li class="post">
         <a href="/blog/2014/03/14/google-store-locator/">Google-store-locator</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/29/introduction-to-css-positioning/">Introduction to CSS Positioning</a>
       </li>
     
   </ul>

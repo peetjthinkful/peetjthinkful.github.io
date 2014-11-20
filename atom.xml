@@ -4,7 +4,7 @@
   <title><![CDATA[Petes Stuff]]></title>
   <link href="http://peetjthinkful.github.io/atom.xml" rel="self"/>
   <link href="http://peetjthinkful.github.io/"/>
-  <updated>2014-11-20T01:16:25+11:00</updated>
+  <updated>2014-11-20T23:51:25+11:00</updated>
   <id>http://peetjthinkful.github.io/</id>
   <author>
     <name><![CDATA[Pete Januarius]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Principles of development #2 - Decoupling]]></title>
+    <link href="http://peetjthinkful.github.io/blog/2014/11/21/principles-of-dev-2-decoupling/"/>
+    <updated>2014-11-21T13:15:20+11:00</updated>
+    <id>http://peetjthinkful.github.io/blog/2014/11/21/principles-of-dev-2-decoupling</id>
+    <content type="html"><![CDATA[<p>I was once asked in an interview by a very smart architect to describe the most important aspects of a good architecture. I replied that it should be simple and decoupled. Fortunately he agreed with me although I didn&rsquo;t end up working for the company!</p>
+
+<p>I believe that if you have these 2 things going for you then you are off to a great start. Often, other facets of a good architecture follow from these two principles. For example &lsquo;extensibility&rsquo; &ndash; the ease of adding new and extra functionality to your existing system. A decoupled system will certainly enable you to add new parts with minimal fuss.</p>
+
+<p>The key here is dependency. In a decoupled system, each &lsquo;component&rsquo; works without needing the other components in the system ie. a given component is not dependent on any other. If it were, then we wouldn&rsquo;t even be able to load and initialise it without loading some other component first.</p>
+
+<p>So, how does such a system work. Well one way of making this work is by implementing some kind of message layer. Components talk to each other by passing and receiving  messages. Let&rsquo;s look at an example to round things off.</p>
+
+<p>Let&rsquo;s imagine that our system is made up of a mapping component (MP1) and a graphing component (G1). The job of MP1 is to display a map of Australia revealing the 50 hottest places last summer. These show up as &lsquo;hot spots&rsquo; on the map when it is rendered. MP1 then &lsquo;publishes&rsquo; a message to the message layer. The message itself contains an identifier and a payload. The identifier is just a name &ndash; let&rsquo;s call it &lsquo;HOTSPOT_DATA_MSG&rsquo;. The payload contains some structured data obviously related to the top 50 hotspots.</p>
+
+<p>Meanwhile, G1 has informed the message layer that it would like to know about any message with the name HOTSPOT_DATA_MSG &ndash; in other words it &lsquo;subscribes&rsquo; to a message with a particular name. Whenever such a message is sent, G1 receives it and displays a nice graph of the temperatures of the 50 hottest places in Australia.</p>
+
+<p>You will notice that there is a single dependency in this kind of a system. every component is dependent on the messaging layer component which itself exists just to send and receive messages between components like a kind of telephone exchange operator. This enables components to both co-exist without depending on each other. The only dependencies are the core aspects of the system.</p>
+
+<p><img src="http://peetjthinkful.github.io/images/component-messaging.png" title="Component Messaging" alt="alt text" /></p>
+
+<p><strong>Decoupling Components</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Principles of development #1 - Simplicity]]></title>

@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Petes Stuff</title>
+  <title>Principles of development #2 - Decoupling - Petes Stuff</title>
   <meta name="author" content="Pete Januarius">
 
   
-  <meta name="description" content="Blog Archive 2014 Principles of development #2 - Decoupling
-Nov 21 2014 posted in architecture, development, frontendweb Principles of development # &hellip;">
+  <meta name="description" content="I was once asked in an interview by a very smart architect to describe the most important aspects of a good architecture. I replied that it should be &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Nov 21 2014 posted in architecture, development, frontendweb Principles of devel
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://peetjthinkful.github.io/blog/archives/">
+  <link rel="canonical" href="http://peetjthinkful.github.io/blog/2014/11/21/principles-of-dev-2-decoupling/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.7.1.js"></script>
@@ -76,122 +75,113 @@ Nov 21 2014 posted in architecture, development, frontendweb Principles of devel
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      
+        <h1 class="entry-title">Principles of Development #2 - Decoupling</h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-21T13:15:20+11:00" pubdate data-updated="true">Nov 21<span>st</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>I was once asked in an interview by a very smart architect to describe the most important aspects of a good architecture. I replied that it should be simple and decoupled. Fortunately he agreed with me although I didn&rsquo;t end up working for the company!</p>
 
-  
-  <h2>2014</h2>
+<p>I believe that if you have these 2 things going for you then you are off to a great start. Often, other facets of a good architecture follow from these two principles. For example &lsquo;extensibility&rsquo; &ndash; the ease of adding new and extra functionality to your existing system. A decoupled system will certainly enable you to add new parts with minimal fuss.</p>
 
-<article>
-  
-<h1><a href="/blog/2014/11/21/principles-of-dev-2-decoupling/">Principles of development #2 - Decoupling</a></h1>
-<time datetime="2014-11-21T13:15:20+11:00" pubdate><span class='month'>Nov</span> <span class='day'>21</span> <span class='year'>2014</span></time>
+<p>The key here is dependency. In a decoupled system, each &lsquo;component&rsquo; works without needing the other components in the system ie. a given component is not dependent on any other. If it were, then we wouldn&rsquo;t even be able to load and initialise it without loading some other component first.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/architecture/'>architecture</a>, <a class='category' href='/blog/categories/development/'>development</a>, <a class='category' href='/blog/categories/frontendweb/'>frontendweb</a></span>
-</footer>
+<p>So, how does such a system work. Well one way of making this work is by implementing some kind of message layer. Components talk to each other by passing and receiving  messages. Let&rsquo;s look at an example to round things off.</p>
 
+<p>Let&rsquo;s imagine that our system is made up of a mapping component (MP1) and a graphing component (G1). The job of MP1 is to display a map of Australia revealing the 50 hottest places last summer. These show up as &lsquo;hot spots&rsquo; on the map when it is rendered. MP1 then &lsquo;publishes&rsquo; a message to the message layer. The message itself contains an identifier and a payload. The identifier is just a name &ndash; let&rsquo;s call it &lsquo;HOTSPOT_DATA_MSG&rsquo;. The payload contains some structured data obviously related to the top 50 hotspots.</p>
 
-</article>
+<p>Meanwhile, G1 has informed the message layer that it would like to know about any message with the name HOTSPOT_DATA_MSG &ndash; in other words it &lsquo;subscribes&rsquo; to a message with a particular name. Whenever such a message is sent, G1 receives it and displays a nice graph of the temperatures of the 50 hottest places in Australia.</p>
 
+<p>You will notice that there is a single dependency in this kind of a system. every component is dependent on the messaging layer component which itself exists just to send and receive messages between components like a kind of telephone exchange operator. This enables components to both co-exist without depending on each other. The only dependencies are the core aspects of the system.</p>
 
+<p><img src="/images/component-messaging.png" title="Component Messaging" alt="alt text" /></p>
 
-<article>
-  
-<h1><a href="/blog/2014/11/20/principles-of-dev-1-simplicity/">Principles of development #1 - Simplicity</a></h1>
-<time datetime="2014-11-20T13:15:20+11:00" pubdate><span class='month'>Nov</span> <span class='day'>20</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/development/'>Development</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/11/08/backups-backups/">Backups, backups and more backups</a></h1>
-<time datetime="2014-11-08T19:07:00+11:00" pubdate><span class='month'>Nov</span> <span class='day'>08</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/it/'>IT</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/09/06/iphone-photo-app/">iPhone_photo_app</a></h1>
-<time datetime="2014-09-06T12:15:20+10:00" pubdate><span class='month'>Sep</span> <span class='day'>06</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/ux/'>UX</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/03/14/google-store-locator/">google-store-locator</a></h1>
-<time datetime="2014-03-14T01:51:58+11:00" pubdate><span class='month'>Mar</span> <span class='day'>14</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/29/introduction-to-css-positioning/">Introduction to CSS Positioning</a></h1>
-<time datetime="2014-01-29T00:00:00+11:00" pubdate><span class='month'>Jan</span> <span class='day'>29</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/22/introduction-to-objects/">Introduction to Objects</a></h1>
-<time datetime="2014-01-22T00:23:10+11:00" pubdate><span class='month'>Jan</span> <span class='day'>22</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/12/first-post/">The Beginning of Octopress</a></h1>
-<time datetime="2014-01-12T02:35:59+11:00" pubdate><span class='month'>Jan</span> <span class='day'>12</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>octopress</a></span>
-</footer>
-
-
-</article>
-
+<p><strong>Decoupling Components</strong></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Pete Januarius</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-21T13:15:20+11:00" pubdate data-updated="true">Nov 21<span>st</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/architecture/'>architecture</a>, <a class='category' href='/blog/categories/development/'>development</a>, <a class='category' href='/blog/categories/frontendweb/'>frontendweb</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://peetjthinkful.github.io/blog/2014/11/21/principles-of-dev-2-decoupling/" data-via="" data-counturl="http://peetjthinkful.github.io/blog/2014/11/21/principles-of-dev-2-decoupling/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left articlenav" href="/blog/2014/11/20/principles-of-dev-1-simplicity/" title="Previous Post: Principles of development #1 - Simplicity">&laquo; Principles of development #1 - Simplicity</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -284,7 +274,10 @@ Nov 21 2014 posted in architecture, development, frontendweb Principles of devel
       var disqus_shortname = 'peetj';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://peetjthinkful.github.io/blog/2014/11/21/principles-of-dev-2-decoupling/';
+        var disqus_url = 'http://peetjthinkful.github.io/blog/2014/11/21/principles-of-dev-2-decoupling/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
