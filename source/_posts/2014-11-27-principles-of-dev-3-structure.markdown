@@ -129,6 +129,6 @@ Note that I 'double' underscored it just for emphasis. Note also the camel casin
 For me it comes down to 2 things: Writing maintainable code and making the user happy. You will know if your code is maintainable after several months on the same project because invariably you will have to enhance it when your users actually realise what they really want to do. As for making your users happy, that is an altogether different thing, but if you structure your code and structure your project & deliverables, you have a chance of success!
 
 
-![alt text](/images/.png "title-text")
+![Writing Maintainable Code](/images/maintainable-code-dilbert.gif "Writing Maintainable Code")
 
 __Image of the day__
