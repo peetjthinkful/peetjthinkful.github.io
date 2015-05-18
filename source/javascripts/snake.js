@@ -946,7 +946,7 @@ function Scene(game) {
         /* Check whether the game has been started */
         if(!state.gameStarted){
           var img = new Image();
-          img.src = '../images/snake/snake.png';
+          img.src = '../../images/snake/snake.png';
           _getGame().getContext().drawImage(img, 50, 50);
           ctx.font = '14pt Courier';
           ctx.fillStyle = "#000000";
