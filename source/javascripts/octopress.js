@@ -55,13 +55,16 @@ function addSidebarToggler() {
 // }
 
 function testFeatures() {
-    var features = ['maskImage'];
-    $(features).map(function(i,feature){
-        Modernizr.addTest(feature,function(){
-           Modernizr.testAllProps(feature)
-        });
-    });
+    // var features = ['maskImage'];
+    // $(features).map(function(i,feature){
+    //     Modernizr.addTest(feature,function(){
+    //        Modernizr.testAllProps(feature)
+    //     });
+    // });
 }
+
+
+
 function addCodeLineNumbers() {
   if (navigator.appName === 'Microsoft Internet Explorer') { return; }
   $('div.gist-highlight').each(function(code) {
