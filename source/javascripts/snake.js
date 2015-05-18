@@ -1,6 +1,6 @@
 var u, $$snk, _game;
-var __levelImgs = ['../images/snake/pill-1.png', '../images/snake/pill-2.png', '../images/snake/pill-3.png', '../images/snake/pill-4.png', '../images/snake/pill-5.png', '../images/snake/pill-6.png', '../images/snake/pill-7.png', '../images/snake/pill-8.png', '../images/snake/pill-9.png', '../images/snake/pill-10.png'];
-var __fruitImgs = ['../images/snake/fruit1.png','../images/snake/fruit2.png','../images/snake/fruit3.png','../images/snake/fruit4.png','../images/snake/fruit1.png','../images/snake/fruit1.png','../images/snake/fruit1.png','../images/snake/fruit1.png','../images/snake/fruit1.png'];
+var __levelImgs = ['../../images/snake/pill-1.png', '../../images/snake/pill-2.png', '../../images/snake/pill-3.png', '../../images/snake/pill-4.png', '../../images/snake/pill-5.png', '../../images/snake/pill-6.png', '../../images/snake/pill-7.png', '../../images/snake/pill-8.png', '../../images/snake/pill-9.png', '../../images/snake/pill-10.png'];
+var __fruitImgs = ['../../images/snake/fruit1.png','../../images/snake/fruit2.png','../../images/snake/fruit3.png','../../images/snake/fruit4.png','../../images/snake/fruit1.png','../../images/snake/fruit1.png','../../images/snake/fruit1.png','../../images/snake/fruit1.png','../../images/snake/fruit1.png'];
 var __backgroundColors = ['blue', 'red', 'yellow'];
 
 $(document).ready(function() {
@@ -522,7 +522,7 @@ function Game() {
       _getState().numLives -= 1;
 
       /* Play die sound */
-      var sndSnakeDie = new buzz.sound('../sounds/snake-die.wav');
+      var sndSnakeDie = new buzz.sound('../../sounds/snake-die.wav');
       sndSnakeDie.play();
 
       /* Stop the game if the player has lost all lives */
@@ -698,7 +698,7 @@ function Game() {
     };
 
     var _eatFruit = function(){
-      var sndEatFruit = new buzz.sound('../sounds/eat-fruit.wav');
+      var sndEatFruit = new buzz.sound('../../sounds/eat-fruit.wav');
       sndEatFruit.play();
       _getState().fruitEaten = true;
       _getState().score += 100 * Math.pow(2, _getState().level);
@@ -710,7 +710,7 @@ function Game() {
       obstacles.splice(index, 1);
 
       /* Play eat pill sound !! */
-      var sndEatPill = new buzz.sound('../sounds/pong.wav', { volume: 25 });
+      var sndEatPill = new buzz.sound('../../sounds/pong.wav', { volume: 25 });
       sndEatPill.play();
 
       /* Make snakey longer */
