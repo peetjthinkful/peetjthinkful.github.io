@@ -12,7 +12,7 @@ for(var i=1; i<11; i++){
 /* Populate Fruit images */
 for(var j=1; j<10; j++){
   var fruit = new Image();
-  fruit.src = '../../images/snake/fruit'+i+'.png';
+  fruit.src = '../../images/snake/fruit'+j+'.png';
   __fruitImgs.push(fruit);
 }
 
