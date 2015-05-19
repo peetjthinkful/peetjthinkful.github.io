@@ -1,6 +1,20 @@
 var u, $$snk, _game;
-var __levelImgs = ['../../images/snake/pill-1.png', '../../images/snake/pill-2.png', '../../images/snake/pill-3.png', '../../images/snake/pill-4.png', '../../images/snake/pill-5.png', '../../images/snake/pill-6.png', '../../images/snake/pill-7.png', '../../images/snake/pill-8.png', '../../images/snake/pill-9.png', '../../images/snake/pill-10.png'];
-var __fruitImgs = ['../../images/snake/fruit1.png','../../images/snake/fruit2.png','../../images/snake/fruit3.png','../../images/snake/fruit4.png','../../images/snake/fruit1.png','../../images/snake/fruit1.png','../../images/snake/fruit1.png','../../images/snake/fruit1.png','../../images/snake/fruit1.png'];
+var __levelImgs = [];
+
+/* Populate Level images */
+for(var i=1; i<11; i++){
+  var imgPill = new Image();
+  imgPill.src = '../../images/snake/pill-'+i+'.png';
+  __levelImgs.push(imgPill);
+}
+
+/* Populate Fruit images */
+for(var j=1; j<10; j++){
+  var fruit = new Image();
+  fruit.src = '../../images/snake/fruit'+i+'.png';
+  __fruitImgs.push(fruit);
+}
+
 var __backgroundColors = ['blue', 'red', 'yellow'];
 
 $(document).ready(function() {
@@ -877,8 +891,9 @@ function Scene(game) {
       var yLower = ((row % 4)*100) + 20
       var yHigher = (((row % 4) + 1)*100) - 20;
       var point = _generateXY(xLower, xHigher, yLower, yHigher);
-      var img = new Image();
-      img.src = _game.getLevels()[_getGameState().level-1].getImgs();
+      //var img = new Image();
+      //img.src = _game.getLevels()[_getGameState().level-1].getImgs();
+      img = _game.getLevels()[_getGameState().level-1].getImg();
       return {
               image: img,
               location: point,
@@ -1071,8 +1086,7 @@ function Scene(game) {
 
         /* Draw the fruit */
         if(state.displayFruit){
-          var img = new Image();
-          img.src = __fruitImgs[state.level-1];
+          var img = __fruitImgs[state.level-1];
           _getGame().getContext().drawImage(img, 194, 194);
         }
 
@@ -1363,15 +1377,15 @@ function Segment(index, direction, snakeLength, parent, pos){
 
 function Level(index){
   var _levelNumber = index;
-  var _imgs = __levelImgs[index];
+  var _img = __levelImgs[index];
   var _numImages = 16 + index;
 
   var _getLevelNumber = function(){
     return _levelNumber;
   };
 
-  var _getImgs = function(){
-    return _imgs;
+  var _getImg = function(){
+    return _img;
   };
 
   var _getNumImages = function(){
@@ -1380,7 +1394,7 @@ function Level(index){
 
   return{
     getLevelNumber: _getLevelNumber,
-    getImgs: _getImgs,
+    getImg: _getImg,
     getNumImages: _getNumImages
   }
 };
