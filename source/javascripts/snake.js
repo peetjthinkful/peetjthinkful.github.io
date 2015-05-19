@@ -26,10 +26,9 @@ var __backgroundColors = ['blue', 'red', 'yellow'];
 
 $(document).ready(function() {
     $.ajax({
-        url: 'http://nodejssnake-songcat.rhcloud.com/initConversation/?callback=?',
+        url: 'http://nodejssnake-songcat.rhcloud.com/initConversation',
         dataType: "jsonp",
         jsonpCallback: "_init",
-        contentType: "application/json",
         cache: false,
         timeout: 5000,
         success: function(data) {
