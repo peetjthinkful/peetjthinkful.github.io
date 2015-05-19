@@ -28,7 +28,7 @@ $(document).ready(function() {
     $.ajax({
         url: 'http://nodejssnake-songcat.rhcloud.com/initConversation',
         dataType: "jsonp",
-        jsonpCallback: "_init",
+        jsonp: "_init",
         cache: false,
         timeout: 5000,
         success: function(data) {
