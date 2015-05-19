@@ -1,5 +1,6 @@
 var u, $$snk, _game;
 var __levelImgs = [];
+var __fruitImgs = [];
 
 /* Populate Level images */
 for(var i=1; i<11; i++){
