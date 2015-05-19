@@ -314,15 +314,18 @@ function Game() {
           _gameStartTime = Date.now();
         }
         else{
-          window.setTimeout(function(){
-            _getState().endOfLife = false;
-            _getState().endOfLevel = false;
-            _getState().endOfGame = false;
-            _getState().gameBeaten = false;
-            _getState().numLives = 3;
-            _resetGame();
-            _restartGame();
-          }, 500);
+          if(_getState().endOfLife || _getState().endOfLevel || _getState().endOfGame){
+            window.setTimeout(function(){
+              _getState().endOfLife = false;
+              _getState().endOfLevel = false;
+              _getState().endOfGame = false;
+              _getState().gameBeaten = false;
+              _getState().numLives = 3;
+              _resetGame();
+              _restartGame();
+            }, 500);
+
+          }
         }
       }
       // TO PAUSE THE GAME - PRESS 'P'
