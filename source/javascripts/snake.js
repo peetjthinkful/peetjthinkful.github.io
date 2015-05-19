@@ -314,7 +314,7 @@ function Game() {
           _gameStartTime = Date.now();
         }
         else{
-          if(_getState().endOfLife || _getState().endOfLevel || _getState().endOfGame){
+          if(_getState().endOfGame){
             window.setTimeout(function(){
               _getState().endOfLife = false;
               _getState().endOfLevel = false;
