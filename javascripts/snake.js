@@ -452,7 +452,7 @@ function Game() {
         var promise = new Promise(function(resolve, reject) {
           var request = new XMLHttpRequest();
           request.open('GET', 'http://nodejssnake-songcat.rhcloud.com/getHiScores');
-          request.setRequestHeader('x-access-token', window.localStorage.getItem('token'));
+          //request.setRequestHeader('x-access-token', window.localStorage.getItem('token'));
           request.onload = function() {
             if (request.status == 200) {
               resolve(request.response); // we got data here, so resolve the Promise
